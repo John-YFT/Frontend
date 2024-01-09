@@ -1,0 +1,634 @@
+body {
+  margin: 0;
+}
+* { 
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.header__backgraund {
+  border: 0px;
+  background-image: url(./images/bg.jpg);
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.header__backgraund > nav {
+  display: grid;
+  justify-content: center;
+}
+.header__backgraund > nav > div {
+  display: flex;
+}
+.header__icons > img {
+  padding-left: 20px;
+}
+.header__icons {
+  padding-top: 20px;
+  padding-left: 35vw;
+}
+
+@media screen and (max-width: 430px) {
+  .header__icons {
+    padding-left: 0vw;
+  }
+  .header__backgraund > nav > div {
+    display: block;
+  }
+  .header__icons > img {
+    padding-left: 25px;
+    width: 7vw;
+  }
+  .header__logo {
+    width: 70vw;
+    position: relative;
+    left: 10%;
+  }
+}
+
+.header__info {
+  background-image: url(./images/info.png);
+  width: 480px;
+  height: 283px;
+  background-size: 30rem;
+  position: absolute;
+  bottom: 0px;
+
+  left: 52%;
+}
+.header__info > p {
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding-left: 40px;
+}
+
+.header__info > button {
+  margin-left: 40px;
+  background-color: black;
+  border: 0px;
+  color: #f8f200;
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 1.5rem;
+}
+.header_main {
+  height: 5vh;
+}
+@media screen and (max-width: 430px) {
+  .header__info {
+    width: 320px;
+    height: 189px;
+    background-size: 20rem;
+    top: 85%;
+    left: 0px;
+  }
+  .header__info > p {
+    font-size: 2rem;
+    margin: 20px 0px;
+  }
+
+  .header__info > button {
+    margin-left: 55px;
+  }
+  .header_main {
+    height: 15vh;
+  }
+}
+
+.main__center {
+  display: grid;
+  justify-content: center;
+}
+
+.main__center__title > div > p {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+.main__center__content {
+  width: 45vw;
+  line-height: 30px;
+  color: #777777;
+}
+
+.main__center__foto {
+  display: flex;
+  justify-content: center;
+}
+
+.main__center__foto__double {
+  width: 30%;
+}
+.main__center__titleAndContent {
+  display: grid;
+  justify-content: center;
+}
+
+.main__center__foto1 {
+  margin-top: 27px;
+}
+
+.main__center__foto2 {
+  margin-top: 27px;
+}
+
+.main__center__foto3 {
+  margin-bottom: 8vh;
+  margin-top: 27px;
+  margin-left: 5vw;
+}
+
+@media screen and (max-width: 430px) {
+  .main__center__title > div > p {
+    font-size: 2rem;
+  }
+
+  .main__center__content {
+    width: 100vw;
+  }
+
+  .main__center__foto {
+    display: block;
+  }
+
+  .main__center__foto1 {
+    height: 30vh;
+    width: 100vw;
+  }
+
+  .main__center__foto2 {
+    height: 30vh;
+    width: 100vw;
+  }
+
+  .main__center__foto3 {
+    height: 60vh;
+    width: 100vw;
+    margin-left: 0vw;
+  }
+}
+.main__block2-3 {
+  width: 100%;
+  position: relative;
+  top: 5px;
+}
+
+.main__form {
+  background-color: black;
+  color: white;
+}
+.main__form > div {
+  display: grid;
+  justify-content: center;
+}
+.main__form > div > div {
+  display: flex;
+}
+
+.main__form > div > div > p {
+  font-size: 4rem;
+  margin-left: 40px;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+
+.main__form > div > p {
+  width: 50vw;
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+
+.main__form__input {
+  display: block;
+}
+
+.main__form__input_style {
+  width: 32vw;
+  height: 4vh;
+  background-color: black;
+  border: 0px;
+  border-bottom: 2px solid #4a4a4a;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: white;
+}
+.main__form__file_style {
+  display: none;
+}
+.main__form__button_style {
+  background-color: #f8f200;
+  font-weight: bold;
+  padding: 15px;
+  padding-right: 45px;
+  padding-left: 45px;
+  font-size: 1.2rem;
+  border: 0px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.main__form__checkbox_style {
+  display: none;
+}
+.main__form__checkbox_label2_style {
+  color: rgb(207, 207, 207);
+  margin-left: 10px;
+  position: relative;
+  top: -5px;
+}
+.main__form__checkbox_label_style {
+  display: block;
+  border: 1px solid #4a4a4a;
+  width: 10px;
+  height: 10px;
+}
+
+.main__form__checkbox_style:checked + label {
+  background-color: rgba(0, 255, 0, 0.8);
+}
+
+.main__form__file_label_style {
+  border: 1px dashed #4a4a4a;
+  padding: 10rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.main__form__fotoXBOX {
+  background-image: url(./images/YLine.png);
+  width: 24vw;
+  height: 90%;
+  background-size: 23rem;
+}
+.main__form__XPSPHONE {
+  display: none;
+}
+.main__form__XPS {
+  display: flex;
+}
+.main__form__fotoPS {
+  background-image: url(./images/BLine.png);
+  width: 24vw;
+  height: 90%;
+  background-size: 23rem;
+}
+.main__form__fotoXBOX > img {
+  margin-left: 35%;
+  margin-top: 10%;
+  width: 15vw;
+}
+
+.main__form__fotoPS > img {
+  margin-left: 20%;
+  margin-top: 5%;
+  width: 15vw;
+}
+@media screen and (max-width: 430px) {
+  .main__form__XPS {
+    display: none;
+  }
+  .main__form__XPSPHONE {
+    display: flex;
+  }
+  .main__form__fotoXBOX {
+    background-image: url(./images/YLine.png);
+    width: 50vw;
+    height: 25vh;
+    background-size: 10rem;
+  }
+  .main__form__fotoPS {
+    background-image: url(./images/BLine.png);
+    width: 50vw;
+    height: 25vh;
+    background-size: 10rem;
+  }
+
+  .main__form__fotoXBOX > img {
+    margin-left: 10vw;
+    margin-top: 10%;
+    width: 35vw;
+  }
+
+  .main__form__fotoPS > img {
+    margin-left: 10vw;
+    margin-top: 10%;
+    width: 35vw;
+  }
+  .main__block2-3 {
+    width: 100%;
+    position: relative;
+    top: 5px;
+  }
+
+  .main__form > div > div {
+    display: grid;
+  }
+
+  .main__form > div > div > p {
+    font-size: 2rem;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+  .main__form > div > div > img {
+    width: 30vw;
+  }
+
+  .main__form > div > p {
+    width: 100vw;
+  }
+
+  .main__form__input_style {
+    width: 98vw;
+  }
+  .main__form__file_style {
+    display: none;
+  }
+  .main__form__checkbox_style {
+    display: none;
+  }
+  .main__form__checkbox_label2_style {
+    font-size: 0.8rem;
+  }
+
+  .main__form__checkbox_style:checked + label {
+    background-color: rgba(0, 255, 0, 0.8);
+  }
+
+  .main__form__file_label_style {
+    border: 1px dashed #4a4a4a;
+    padding: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+.main__block3-4 {
+  width: 100%;
+  position: relative;
+  top: 5px;
+}
+
+.main__marketing {
+  background-color: #f8f200;
+  display: grid;
+  justify-content: center;
+}
+
+.main__marketing > div {
+  display: flex;
+}
+
+.main__marketing__title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  width: 44vw;
+  margin-bottom: 0px;
+}
+
+.main__marketing__content {
+  width: 30vw;
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+  font-weight: 500;
+}
+.main__marketing__HP > div {
+  display: flex;
+  margin-top: 20px;
+}
+.main__marketing__HP > div > p {
+  margin: 0px;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding-top: 3px;
+  padding-left: 10px;
+}
+.main__marketing__foto > div {
+  margin: 60px;
+}
+.main__marketing__HP > button {
+  margin-top: 40px;
+  background-color: black;
+  border: 0px;
+  color: #f8f200;
+  padding: 15px;
+  padding-left: 55px;
+  padding-right: 55px;
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 430px) {
+  .main__marketing > div {
+    display: block;
+  }
+  .main__marketing__foto > div > img {
+    width: 90vw;
+  }
+  .main__marketing__foto > div {
+    width: 90vw;
+    margin: 10px;
+  }
+  .main__marketing__title {
+    font-size: 2rem;
+    width: 100vw;
+  }
+
+  .main__marketing__content {
+    width: 100vw;
+  }
+  .main__marketing__HP > div > img {
+    width: 8vw;
+    height: 5vh;
+  }
+  .main__marketing__HP > div > p {
+    padding-top: 0px;
+    padding-left: 10px;
+  }
+}
+
+.main__pay {
+  background-color: black;
+  color: white;
+}
+.main__pay__flex {
+  display: flex;
+}
+
+.main__pay__flex > div {
+  width: 50vw;
+}
+.main__pay__flex > div > img {
+  width: 50vw;
+}
+
+.main__pay__flex > div > div > p {
+  color: rgb(82, 190, 220);
+  font-weight: bold;
+}
+
+.main__pay__flex > div > div > div {
+  display: flex;
+  margin-top: 15px;
+}
+.main__pay__flex > div > div > div > p {
+  margin: 0px;
+}
+.main__pay__flex > div > p {
+  font-size: 2.5rem;
+  font-weight: bold;
+  width: 30vw;
+  margin-bottom: 0px;
+}
+.main__pay__flex__content {
+  margin-left: 20px;
+  width: 9vw;
+}
+.main__pay__flex__pack > div > img {
+  width: 2vw;
+  height: 2vw;
+}
+.main__pay__flex__platform {
+  margin-top: 10vh;
+}
+.main__pay__flex__platform > div > img {
+  margin: 8px;
+  margin-right: 50px;
+}
+.main__pay__flex__platform__pc {
+  width: 3vw;
+  height: 5vh;
+}
+.main__pay__flex__platform__xbox {
+  width: 10vw;
+}
+.main__pay__flex__platform__stadia {
+  width: 3vw;
+  height: 5vh;
+}
+.main__pay__flex__platform__ps {
+  width: 10vw;
+}
+
+@media screen and (max-width: 430px) {
+  .main__pay__flex {
+    display: block;
+  }
+  .main__pay__flex > div > img {
+    width: 100vw;
+  }
+  .main__pay__flex > div {
+    width: 93vw;
+  }
+  .main__pay__flex > div > p {
+    font-size: 2rem;
+    width: 93vw;
+  }
+  .main__pay__flex > div > div > p {
+    font-size: 1.5rem;
+  }
+  .main__pay__flex__platform {
+    margin-top: 6vh;
+  }
+  .main__pay__flex__pack > div > img {
+    width: 7vw;
+    height: 7vw;
+    margin-right: 15px;
+  }
+  .main__pay__flex__platform__pc {
+    width: 15vw;
+    height: 5vh;
+  }
+  .main__pay__flex__platform__xbox {
+    width: 50vw;
+  }
+  .main__pay__flex__platform__stadia {
+    width: 15vw;
+    height: 5vh;
+  }
+  .main__pay__flex__platform__ps {
+    width: 50vw;
+  }
+  .main__pay__flex__content {
+    padding-bottom: 7vh;
+  }
+}
+
+.footer__down {
+  background-color: black;
+}
+.footer__down > p {
+  color: white;
+  margin: 0px;
+  font-size: 0.7rem;
+}
+footer > div {
+  display: grid;
+  justify-content: center;
+}
+
+footer > div > div {
+  display: flex;
+}
+footer > div > div > div {
+  display: flex;
+}
+.footer__content {
+  margin-top: 4px;
+}
+.footer__content > p {
+  margin-left: 35px;
+  font-size: 0.8rem;
+}
+.footer__foto {
+  margin-right: 20vw;
+}
+
+.footer__foto > img {
+  margin-left: 20px;
+}
+.footer__foto__CDRed {
+  width: 8vw;
+}
+.footer__foto__logo {
+  width: 12vw;
+}
+
+@media screen and (max-width: 430px) {
+
+  footer > div > div {
+    display: block;
+  }
+  footer > div > div > div {
+    display: block;
+  }
+  .footer__content {
+    margin-top: 4px;
+  }
+  .footer__content > p {
+    margin-left: 0px;
+    font-size: 1.2rem;
+  }
+  .footer__foto {
+    margin-right: 0vw;
+    display: grid;
+    justify-content: center;
+  }
+  
+  .footer__foto > img {
+    margin-left: 0px;
+  }
+  .footer__foto__CDRed {
+    width: 40vw;
+    position: relative;
+    left: 30px;
+  }
+  .footer__foto__logo {
+    width: 60vw;
+  }
+  .footer__down > p {
+    color: white;
+    margin: 20px;
+    font-size: 0.8rem;
+  }
+}
